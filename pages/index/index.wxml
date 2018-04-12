@@ -1,6 +1,6 @@
 <view class="weather-wrapper">
     <image class="weather-bg" src="/img/sunny-bg.png"></image> 
-    <view class="temperature">18°</view>
+    <view class="temperature">15°</view>
     <view class="weather">晴</view> 
 </view>
    
