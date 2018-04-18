@@ -26,3 +26,38 @@
   height: 100%;
   z-index: -1;
 }
+.time {
+  display: flex; /**子视图横排排列*/
+  justify-content: center;/*项目位于容器的中心。用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。*/
+  align-items: center;/*定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。*/
+  margin-top: 40rpx; 
+}
+.time-icon {
+  /* margin-right: 10rpx; */
+  width: 36rpx;
+  height: 28rpx;
+}
+.time-text {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5
+}
+
+.scroll {
+  margin-top: 40rpx;
+  width: 100%; 
+  white-space: nowrap;
+  justify-content: center;
+  opacity: 0.65;
+}
+.scroll view view {
+  flex-direction: column;
+  flex-shrink: 0;/*禁止自动压缩*/
+  width: 120rpx; 
+  height: 100rpx;
+  display: inline-block
+}
+.scroll view image {
+  width: 120rpx; 
+  height: 100rpx;
+}

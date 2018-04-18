@@ -1,8 +1,29 @@
 <view class="weather-wrapper">
-    <image class="weather-bg" src="/img/sunny-bg.png"></image> 
-    <view class="temperature">15°</view>
-    <view class="weather">晴</view> 
+    <image class="weather-bg" src="{{weatherImgPath}}"></image> 
+    <view class="temperature">{{nowTemp}}</view>
+    <view class="weather">{{nowWeather}}</view>
+
+     
 </view>
-   
+<view class='time'>
+    <image class="time-icon" src="/img/time-icon.png"></image> 
+    <view class='time-text'>未来24小时天气预报</view>
+</view>
+<scroll-view scroll-x="true" class="scroll" bindscroll="scroll" >
+    <view style="white-space: nowrap;">
+        <view wx:for="{{forsize}}">
+          {{(index+1)*3}}时后
+        </view>
+    </view>
+    <view style="display: inline-block;">
+      <image wx:for="{{forsize}}" src="/img/{{item.weather}}-icon.png"></image>
+    </view>
+    <view style="white-space: nowrap;">
+        <view wx:for="{{forsize}}" >
+            {{item.temp}}°   
+        </view>
+    </view>
+</scroll-view>
+
 
 

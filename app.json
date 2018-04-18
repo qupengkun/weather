@@ -3,9 +3,10 @@
     "pages/index/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#cbeefd",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "天气小应用",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   }
 }
